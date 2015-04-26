@@ -1,5 +1,5 @@
 /*
- *  Sugar Library edge
+ *  Sugar Library full
  *
  *  Freely distributable and licensed under the MIT-style license.
  *  Copyright (c) 2013 Andrew Plummer
@@ -239,7 +239,7 @@
   var internalToString = object.prototype.toString;
 
   // Are regexes type function?
-  var regexIsFunction = typeof regexp() === 'function';
+  var regexIsFunction = typeof regexp(/x/) === 'function';
 
   // Do strings have no keys?
   var noKeysInStringObjects = !('0' in new string('a'));
